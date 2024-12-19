@@ -1,0 +1,68 @@
+
+@import '/node_modules/bootstrap-icons/font/bootstrap-icons.css';
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    transition: all 0.5s ease;
+}
+.sidebarToggle{
+    width: 80px;
+    transition: all 0.5s ease;
+}
+.sidebar .toggle{
+    width: 35px;
+    height: 35px;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    padding:8px;
+    right: -5px;
+    top: 0px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+
+
+
+.content{
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    transition: 0.3s;
+    height: 100vh;
+    
+}
+.contentToggle{
+    width: calc(100% - 80px);
+    margin-left: 80px;
+    transition: all 0.5s ease;
+}
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    .sidebar{
+        width: 80px;
+        transition: all 0.5s ease;
+    }
+    .content{
+        width: calc(100% - 80px);
+        margin-left: 80px;
+        transition: all 0.5s ease;
+        
+    }
+}
